@@ -1,0 +1,106 @@
+.card-container {
+    perspective: 50em;
+  }
+  .card{
+    margin-top: 50px;
+    position: relative;
+    width: 320px;
+    height: 200px;
+    padding: 2em;
+    color: #fff;
+    transform: rotateY(30deg) rotateX(15deg);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .card:hover {
+    transform: rotateY(-30deg) rotateX(-15deg);
+  }
+  
+  .layers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+  }
+  
+  .layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    background-image: var(--bi);
+    box-shadow: 0 0 0.5em #000d inset;
+  }
+  
+  /* Explicitly defining layers with translateZ values */
+  .layer:nth-child(1) {
+    transform: translateZ(0px);
+  }
+  
+  .layer:nth-child(2) {
+    transform: translateZ(-4px);
+  }
+  
+  .layer:nth-child(3) {
+    transform: translateZ(-8px);
+  }
+  
+  .layer:nth-child(4) {
+    transform: translateZ(-12px);
+  }
+  
+  .layer:nth-child(5) {
+    transform: translateZ(-16px);
+  }
+  
+  .layer:nth-child(6) {
+    transform: translateZ(-20px);
+  }
+  
+  .layer:nth-child(7) {
+    transform: translateZ(-24px);
+  }
+  
+  .layer:nth-child(8) {
+    transform: translateZ(-28px);
+  }
+  
+  .layer:nth-child(9) {
+    transform: translateZ(-32px);
+  }
+  
+  .layer:nth-child(10) {
+    transform: translateZ(-36px);
+  }
+  
+  .layer:last-child {
+    box-shadow: 0 0 0.5em #000d inset, 0 0 5px #000;
+  }
+  /* card section end */
+  
+  .cards-data{
+    display: flex;
+    font-family: "Orbitron", sans-serif;
+  }
+  
+  
+  .card-container:nth-child(1) {
+    --bi: linear-gradient(#faf6f6 5em, transparent 3em), linear-gradient(60deg, #f775bb, #757fea);
+  }
+  .card-container:nth-child(2) {
+    --bi: linear-gradient(#faf6f6 5em, transparent 3em), linear-gradient(60deg, #f775bb, #757fea);
+  }
+  .card-container:nth-child(3) {
+    --bi: linear-gradient(#faf6f6 5em, transparent 3em), linear-gradient(60deg, #f775bb, #757fea);
+  }
+.cards-heading{
+    width: 500px;
+    text-align: center;
+    margin-top: 70px;
+}  

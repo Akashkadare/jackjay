@@ -1,0 +1,26 @@
+.wrapper.two {
+    text-align: center;
+    margin: auto;
+      font-size: 6rem;
+      font-family: "Orbitron", sans-serif;
+    }
+    .wrapper.two h1{
+      margin-top: 70px;
+      margin-bottom: 70PX;
+    }
+    .neon h3 {
+      margin: 1rem auto;
+      font-size: 90px;
+      animation: neon 1s ease infinite;
+    }
+    @keyframes neon {
+      0%,
+      100% {
+          text-shadow: 0 0 10px #77ef00a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 20px #ef00e3a8, 0 0 2px #fed128, 2px 2px 2px #806914;
+          color: #e3ca3a;
+      }
+      50% {
+          text-shadow: 0 0 2px #40800b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 5px #800e0b, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+          color: #eda0d3;
+      }
+    }

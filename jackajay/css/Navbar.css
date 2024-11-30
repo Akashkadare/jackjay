@@ -1,0 +1,17 @@
+#navbar{
+    /* margin: 30px; */
+    margin-left: 150px;
+    
+margin-top: 100px;
+margin-bottom: 150px;
+    }
+    #navbarNav ul li a{
+      color: #FFF;
+      padding-left: 40px;
+      font-weight: bolder;
+    }
+    #navmenu{
+        position: fixed;
+        backdrop-filter: blur(30px);
+    }
+    /* navbar */
